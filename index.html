@@ -62,31 +62,26 @@
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
     <div class="nav-group">
-      <a href="#starting-point">Destinations</a>
-      <a href="#publishing">Reviews</a>
-      <a href="#collections">Collections</a>
+      <a href="/destinations/">Destinations</a>
+      <a href="/destinations/#restaurants">Restaurants</a>
+      <a href="/destinations/#hotels">Hotels</a>
     </div>
-
-    <a class="brand" href="/" aria-label="The Mexico Review home">
-      THE MEXICO REVIEW
-      <small>Independent Travel Journal</small>
-    </a>
-
+    <a class="brand" href="/" aria-label="The Mexico Review home">THE MEXICO REVIEW<small>Independent Travel Journal</small></a>
     <div class="nav-group right">
-      <a href="#standard">The Standard</a>
-      <a href="#launch">Journal</a>
-      <a href="#about">About</a>
+      <a href="/destinations/#experiences">Experiences</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/best-of/">Best Of</a>
+      <a href="/awards/">Awards</a>
     </div>
-
-    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>☰</button>
-
-    <div class="mobile-menu" data-mobile-menu>
-      <a href="#starting-point">Destinations</a>
-      <a href="#publishing">Reviews</a>
-      <a href="#collections">Collections</a>
-      <a href="#standard">The Standard</a>
-      <a href="#launch">Journal</a>
-      <a href="#about">About</a>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-mobile-menu" data-menu-button>☰</button>
+    <div id="site-mobile-menu" class="mobile-menu" data-mobile-menu>
+      <a href="/destinations/">Destinations</a>
+      <a href="/destinations/#restaurants">Restaurants</a>
+      <a href="/destinations/#hotels">Hotels</a>
+      <a href="/destinations/#experiences">Experiences</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/best-of/">Best Of</a>
+      <a href="/awards/">Annual Awards</a>
     </div>
   </nav>
 </header>
@@ -99,8 +94,8 @@
         <div class="hero-kicker eyebrow">Independent editorial review of Mexico</div>
         <h1 id="hero-title">Mexico, reviewed <span>with intention.</span></h1>
         <div class="hero-copy">
-          <p>Independent reviews, curated collections and useful travel intelligence. We begin in Cancún and the Mexican Caribbean — then expand city by city, place by place.</p>
-          <a class="text-link" href="#standard">Our standard <span>↓</span></a>
+          <p>Independent reviews, considered Best Of lists and annual awards, organized around Cancún, Mexico City and Los Cabos. Three cities. One independent editorial standard.</p>
+          <a class="text-link" href="/destinations/">Explore destinations <span>↗</span></a>
         </div>
       </div>
       <div class="hero-note">
@@ -110,12 +105,28 @@
     </div>
   </section>
 
+
+  <section class="section directory-section homepage-destinations" id="destinations">
+    <div class="container">
+      <div class="split-head reveal">
+        <div><div class="eyebrow">Our destinations</div><h2 class="section-title">Three cities. One standard.</h2></div>
+        <p class="section-intro">Our first three destinations are Cancún, Mexico City and Los Cabos. Each is organized into Restaurants, Hotels and Experiences, ready for documented reviews, Best Of collections and year-end awards.</p>
+      </div>
+      <div class="location-grid">
+        <a class="location-tile reveal" href="/cancun/"><span class="tile-number">01 / Mexico</span><h3>Cancún</h3><p>First editorial focus</p><span class="tile-arrow" aria-hidden="true">↗</span></a>
+        <a class="location-tile reveal" href="/mexico-city/"><span class="tile-number">02 / Mexico</span><h3>Mexico City</h3><p>Editorial coverage in development</p><span class="tile-arrow" aria-hidden="true">↗</span></a>
+        <a class="location-tile reveal" href="/los-cabos/"><span class="tile-number">03 / Mexico</span><h3>Los Cabos</h3><p>Editorial coverage in development</p><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <a class="text-link directory-bottom-link" href="/destinations/">All destinations <span>↗</span></a>
+    </div>
+  </section>
+
   <section class="section starting-point" id="starting-point">
     <div class="container">
       <div class="split-head reveal">
         <div>
           <div class="eyebrow">Our starting point</div>
-          <h2 class="section-title">Cancún, examined properly.</h2>
+          <h2 class="section-title">Cancún, first in focus.</h2>
         </div>
         <p class="section-intro">The Mexico Review starts by going deep rather than wide. Our first editorial focus is Cancún: where to eat, where to stay, what is worth doing and what is genuinely worth recommending.</p>
       </div>
@@ -127,7 +138,7 @@
             <div class="eyebrow">Eat</div>
             <h3>Restaurants</h3>
             <p>Independent restaurant reviews, category guides and carefully edited best-of lists.</p>
-            <span class="status">Editorial coverage in development</span>
+            <a class="status" href="/cancun/#restaurants">Explore restaurants ↗</a>
           </div>
         </article>
 
@@ -137,7 +148,7 @@
             <div class="eyebrow">Stay</div>
             <h3>Hotels</h3>
             <p>Stays reviewed for comfort, service, character, location and value.</p>
-            <span class="status">Editorial coverage in development</span>
+            <a class="status" href="/cancun/#hotels">Explore hotels ↗</a>
           </div>
         </article>
 
@@ -147,7 +158,7 @@
             <div class="eyebrow">Experience</div>
             <h3>Things to do</h3>
             <p>Experiences, beaches, day trips and practical guides with a clear editorial verdict.</p>
-            <span class="status">Editorial coverage in development</span>
+            <a class="status" href="/cancun/#experiences">Explore experiences ↗</a>
           </div>
         </article>
       </div>
@@ -159,27 +170,27 @@
       <div class="split-head reveal">
         <div>
           <div class="eyebrow">What we publish</div>
-          <h2 class="section-title">Three formats. One point of view.</h2>
+          <h2 class="section-title">Three ways to recognise excellence.</h2>
         </div>
-        <p class="section-intro">The site is being built around repeatable editorial formats so every new piece adds depth to the same destination, category and topic clusters.</p>
+        <p class="section-intro">From individual Reviews to curated Best Of lists and once-a-year Awards, each format has a distinct purpose and an independent editorial process.</p>
       </div>
 
       <div class="publish-grid">
-        <article class="publish-card reveal">
-          <div class="publish-number">01</div>
-          <h3>Reviews</h3>
-          <p>Individual places evaluated with a documented visit, a clear verdict and a consistent category-specific score.</p>
-        </article>
-        <article class="publish-card reveal">
-          <div class="publish-number">02</div>
-          <h3>Collections</h3>
-          <p>Editorially curated lists such as the best restaurants, hotels or experiences in a destination — built from places we have actually evaluated.</p>
-        </article>
-        <article class="publish-card reveal">
-          <div class="publish-number">03</div>
-          <h3>Guides</h3>
-          <p>Useful travel intelligence: neighbourhoods, timing, transport, prices, seasonal planning and the practical questions travellers actually search for.</p>
-        </article>
+        <a class="publish-card reveal" href="/reviews/">
+          <div class="publish-number">01</div><h3>Reviews</h3>
+          <p>Individual restaurants, hotels and experiences, evaluated with documented evidence and a clear editorial verdict.</p>
+          <span class="format-more">Explore Reviews ↗</span>
+        </a>
+        <a class="publish-card reveal" href="/best-of/">
+          <div class="publish-number">02</div><h3>Best Of</h3>
+          <p>Curated city and category listings that compare places on editorial merit, not paid placement.</p>
+          <span class="format-more">Explore Best Of ↗</span>
+        </a>
+        <a class="publish-card reveal" href="/awards/">
+          <div class="publish-number">03</div><h3>Annual Awards</h3>
+          <p>One annual edition recognizing standouts in each city and category, planned for year-end when the evidence supports it.</p>
+          <span class="format-more">Explore Awards ↗</span>
+        </a>
       </div>
     </div>
   </section>
@@ -221,7 +232,7 @@
     <div class="container">
       <div class="split-head reveal">
         <div>
-          <div class="eyebrow">Editorial collections</div>
+          <div class="eyebrow">Best Of / Planned collections</div>
           <h2 class="section-title">The lists we intend to earn.</h2>
         </div>
         <p class="section-intro">Collections will be published as the underlying review coverage becomes strong enough to support them. No empty rankings, no fabricated winners.</p>
@@ -265,8 +276,8 @@
         </div>
         <div class="launch-box reveal">
           <div class="eyebrow">Next</div>
-          <h3>Mexican Caribbean</h3>
-          <p>Once Cancún has meaningful depth, coverage can extend naturally to Isla Mujeres, Riviera Maya, Playa del Carmen and Tulum.</p>
+          <h3>Mexico City &amp; Los Cabos</h3>
+          <p>Our two additional city hubs are ready. Each will gain its own verified restaurant, hotel and experience coverage over time.</p>
         </div>
       </div>
     </div>
@@ -282,18 +293,19 @@
 <footer>
   <div class="container">
     <div class="footer-top">
-      <div class="footer-brand">THE MEXICO REVIEW</div>
+      <a class="footer-brand" href="/">THE MEXICO REVIEW</a>
       <div class="footer-col">
-        <b>Explore</b>
-        <a href="#starting-point">Cancún</a>
-        <a href="#publishing">Reviews</a>
-        <a href="#collections">Collections</a>
+        <b>Destinations</b>
+        <a href="/cancun/">Cancún</a>
+        <a href="/mexico-city/">Mexico City</a>
+        <a href="/los-cabos/">Los Cabos</a>
       </div>
       <div class="footer-col">
         <b>Editorial</b>
-        <a href="#standard">The Standard</a>
-        <a href="#launch">Journal</a>
-        <a href="#about">About</a>
+        <a href="/reviews/">Reviews</a>
+        <a href="/best-of/">Best Of</a>
+        <a href="/awards/">Annual Awards</a>
+        <a href="/#standard">Our Standard</a>
       </div>
     </div>
     <div class="footer-bottom">
