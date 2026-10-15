@@ -226,3 +226,22 @@ button{font:inherit}
  .footer-brand-logo img{width:122px}
  .mobile-menu.open{top:100%}
 }
+
+/* Two-language editorial navigation: Spanish primary, English alternative */
+.nav{column-gap:23px}
+.nav-group{margin-left:auto;gap:28px}
+.language-switch{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex-shrink:0;white-space:nowrap;font:600 10px/1 var(--ui);letter-spacing:.05em;color:#fff}
+.language-option{display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,.7);text-decoration:none;padding:8px 3px;transition:color .2s ease}
+.language-option:hover,.language-option:focus-visible,.language-option.is-active{color:#fff}
+.language-option.is-active{font-weight:700}
+.language-flag{font-family:system-ui,"Apple Color Emoji","Segoe UI Emoji",sans-serif;font-size:16px;letter-spacing:normal;line-height:1}
+.language-divider{display:block;width:1px;height:16px;background:rgba(255,255,255,.34)}
+@media(max-width:900px){
+ .language-switch{margin-left:auto;margin-right:8px}
+ .nav{column-gap:14px}
+}
+@media(max-width:670px){
+ .language-switch{gap:6px;font-size:10px;margin-right:2px}
+ .language-flag{font-size:16px}
+ .language-option{gap:4px;padding:8px 2px}
+}
