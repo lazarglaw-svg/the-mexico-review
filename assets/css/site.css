@@ -201,3 +201,27 @@ button{font:inherit}
  .page-ending h2{font-size:clamp(52px,11vw,72px)}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+/* The Mexico Review — supplied brand identity.
+   The transparent mark is only displayed against the matching Bordeaux background. */
+.nav{height:auto;min-height:124px;padding-top:8px;padding-bottom:8px}
+.brand.brand-logo{display:inline-flex;align-items:center;white-space:normal;line-height:0}
+.brand-logo-wrap{background:#4B0F17;padding:8px 12px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
+.brand-logo-wrap img{display:block;width:76px;height:auto;max-width:none;object-fit:contain}
+.footer{background:#4B0F17}
+.closing-section{background:var(--green)}
+.footer-brand.footer-brand-logo{display:inline-flex;width:fit-content;align-items:center;justify-content:center;background:#4B0F17;line-height:0}
+.footer-brand-logo img{width:148px;height:auto;object-fit:contain;display:block}
+.footer-main p,.footer-bottom{color:rgba(255,255,255,.72)}
+.footer-column strong{color:rgba(255,255,255,.69)}
+@media(max-width:900px){
+ .nav{height:auto;min-height:109px;padding:8px 0}
+ .mobile-menu.open{top:100%}
+}
+@media(max-width:670px){
+ .nav{height:auto;min-height:101px;padding:7px 0}
+ .brand-logo-wrap{padding:5px 9px}
+ .brand-logo-wrap img{width:61px;height:auto}
+ .footer-brand-logo img{width:122px}
+ .mobile-menu.open{top:100%}
+}
