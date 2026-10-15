@@ -1,0 +1,42 @@
+/* TMR restaurant article component. Scoped to .tmr-profile to avoid modifying site.css. */
+.tmr-profile { color:#292526; }
+.tmr-profile a { text-underline-offset:3px; }
+.tmr-profile .tmr-frame { max-width:1160px; margin:0 auto; padding:0 28px; }
+.tmr-profile .tmr-breadcrumbs { display:flex; flex-wrap:wrap;gap:9px; padding:28px 0 14px; font:500 .78rem/1.5 Manrope, sans-serif; color:#7a6f6d; }
+.tmr-profile .tmr-breadcrumbs a {color:inherit;}
+.tmr-profile .tmr-intro { display:grid; grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr); gap:clamp(24px,5vw,64px);align-items:center;padding:28px 0 56px; }
+.tmr-profile .tmr-intro h1 {font-family:Italiana,Georgia,serif;font-size:clamp(2.6rem,5.2vw,5.2rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;margin:18px 0 22px;max-width:700px;}
+.tmr-profile .tmr-label {font:700 .66rem/1.55 Manrope,sans-serif;color:#8b3038;letter-spacing:.13em;text-transform:uppercase;}
+.tmr-profile .tmr-dek{color:#65595a;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.85;max-width:560px;}
+.tmr-profile .tmr-byline {margin-top:20px;font:.75rem/1.7 Manrope,sans-serif;letter-spacing:.02em;color:#7e7271;}
+.tmr-profile .tmr-hero-figure{margin:0;}
+.tmr-profile .tmr-hero-figure img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:5px;display:block;background:#efe7df;}
+.tmr-profile figure figcaption{margin-top:10px;font:400 .69rem/1.55 Manrope,sans-serif;color:#817774;}
+.tmr-profile .tmr-layout{border-top:1px solid #e8dfd9;padding-top:43px;display:grid;grid-template-columns:minmax(0,1fr) 284px;gap:clamp(24px,6vw,90px);align-items:start;}
+.tmr-profile .tmr-copy{min-width:0;max-width:755px;font-family:Manrope,Arial,sans-serif;font-size:.96rem;line-height:1.9;color:#383032;}
+.tmr-profile .tmr-copy h2{font:400 clamp(1.8rem,3vw,2.7rem)/1.2 Italiana,Georgia,serif;color:#2d2224;margin:46px 0 19px;letter-spacing:-.012em;}
+.tmr-profile .tmr-copy h3{font:600 1.11rem/1.5 Manrope,Arial,sans-serif;color:#382428;margin:29px 0 9px;}
+.tmr-profile .tmr-copy p{margin:0 0 17px;}
+.tmr-profile .tmr-copy strong{font-weight:700;}
+.tmr-profile .tmr-copy a{color:#8d333f;text-decoration:underline;}
+.tmr-profile .tmr-aside{position:sticky;top:24px;border:1px solid #e8dcd8;padding:25px 22px;border-radius:5px;background:#fcfaf7;}
+.tmr-profile .tmr-aside h2{font:400 1.65rem/1.2 Italiana,Georgia,serif;margin:0 0 19px;}
+.tmr-profile .tmr-aside dt{font:700 .69rem/1.4 Manrope,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8e4b4e;margin-top:19px;}
+.tmr-profile .tmr-aside dd{font:400 .83rem/1.65 Manrope,sans-serif;margin:5px 0 0;color:#4f4444;}
+.tmr-profile .tmr-link{display:block;text-align:center;padding:13px 16px;margin-top:14px;background:#641f2d;color:white!important;text-decoration:none!important;font:600 .78rem/1.5 Manrope,sans-serif;}
+.tmr-profile .tmr-link.light{background:transparent;color:#641f2d!important;border:1px solid #641f2d;}
+.tmr-profile .tmr-small-note{font:400 .7rem/1.6 Manrope,sans-serif;color:#756969;margin:13px 0 0;}
+.tmr-profile .tmr-disclosure{border-left:3px solid #a27164;background:#faf5f1;padding:18px 20px;font:.83rem/1.65 Manrope,sans-serif;color:#655351;margin:32px 0;}
+.tmr-profile .tmr-source-section{border-top:1px solid #e9e0d9;margin:58px 0;padding-top:24px;}
+.tmr-profile .tmr-source-section h2{font:400 2rem/1.2 Italiana,Georgia,serif;margin:0 0 12px;}
+.tmr-profile .tmr-source-section ol{padding-left:20px;margin:0;font:.77rem/1.9 Manrope,sans-serif;color:#706262;}
+.tmr-profile .tmr-source-section li{padding:5px 0;overflow-wrap:anywhere;}
+.tmr-profile .tmr-related{border-top:1px solid #e6d9d2;padding:38px 0 68px;margin-top:35px;}
+.tmr-profile .tmr-related h2{font:400 2rem/1.2 Italiana,Georgia,serif;}
+.tmr-profile .tmr-related-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px;}
+.tmr-profile .tmr-related-cards a{display:block;text-decoration:none!important;padding:24px;border:1px solid #e1d5cf;color:#50343b!important;}
+.tmr-profile .tmr-related-cards small{display:block;font:.67rem/1.5 Manrope,sans-serif;letter-spacing:.12em;color:#8b6b67;text-transform:uppercase;}
+.tmr-profile .tmr-related-cards strong{font:400 1.5rem/1.25 Italiana,Georgia,serif;display:block;margin:10px 0;}
+.tmr-profile .tmr-related-cards span{font:.78rem/1.5 Manrope,sans-serif;}
+@media(max-width:900px){.tmr-profile .tmr-intro{grid-template-columns:1fr;gap:26px;padding:16px 0 35px}.tmr-profile .tmr-layout{grid-template-columns:1fr}.tmr-profile .tmr-aside{position:static;grid-row:1}.tmr-profile .tmr-copy{max-width:none}}
+@media(max-width:560px){.tmr-profile .tmr-frame{padding:0 20px}.tmr-profile .tmr-intro h1{font-size:2.85rem}.tmr-profile .tmr-related-cards{grid-template-columns:1fr}}
