@@ -37,8 +37,15 @@ for (const p of pageFiles) {
   if (attr(html, "description").length < 40) fail(p, "meta description");
   if (!attr(html, "robots").includes("max-image-preview:large")) fail(p, "image preview directive");
   if (!html.includes('rel="canonical" href="' + canonical + '"')) fail(p, "self-referencing canonical");
-  for (const [localeCode, url] of [["es-MX", es], ["en-US", eng], ["x-default", es]]) {
-    if (!html.includes('hreflang="' + localeCode + '" href="' + url + '"')) fail(p, "hreflang " + localeCode);
+  const esFile = partner + "index.html";
+  const enFile = "en/" + partner + "index.html";
+  // Some research profiles currently exist in English only. Never declare nonexistent translations.
+  if (exists(esFile) && exists(enFile)) {
+    for (const [localeCode, url] of [["es-MX", es], ["en-US", eng], ["x-default", es]]) {
+      if (!html.includes('hreflang="' + localeCode + '" href="' + url + '"')) fail(p, "hreflang " + localeCode);
+    }
+  } else if (html.includes('hreflang="es-MX"') || html.includes('hreflang="en-US"')) {
+    fail(p, "unpaired page must not advertise nonexistent localized counterpart");
   }
   for (const k of ["og:title", "og:description", "og:image", "og:url", "og:locale", "og:locale:alternate"]) {
     if (!attr(html, k, "property")) fail(p, "missing " + k);
@@ -63,6 +70,11 @@ for (const p of pageFiles) {
       if (["cancun", "mexico-city", "los-cabos"].some((city) => p === city + "/index.html" || p === "en/" + city + "/index.html") && !nodes.some((n) => n["@type"] === "TouristDestination")) fail(p, "destination schema");
       if (nodes.some((n) => ["Review", "AggregateRating"].includes(n["@type"]))) fail(p, "unverified rating data");
     } catch (err) { fail(p, "invalid JSON-LD: " + err.message); }
+  }
+  // Make sure root-relative image and stylesheet references point to files in this repository.
+  for (const m of html.matchAll(/(?:src|href)="(\/assets\/[^"]+)"/g)) {
+    const asset=m[1].split("?")[0].slice(1);
+    if (!exists(asset)) fail(p, "missing local asset " + m[1]);
   }
   if (!attr(html, "robots").startsWith("noindex")) indexable.add(canonical);
   for (const m of html.matchAll(/\bhref="(\/[^"]*)"/g)) {

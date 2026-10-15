@@ -20,3 +20,10 @@
 
 ## Index and contact
 - [Sitemap](https://themexicoreview.com/sitemap.xml)
+
+## Researched restaurant profiles (English only, not firsthand TMR reviews)
+- [Xkat-Ik — Cancún](https://themexicoreview.com/en/cancun/restaurants/xkat-ik/)
+- [Esquina Común — Mexico City](https://themexicoreview.com/en/mexico-city/restaurants/esquina-comun/)
+- [Allium — Guadalajara](https://themexicoreview.com/en/guadalajara/restaurants/allium/)
+
+These editorial profiles summarize attributed external research, not independent tasting visits. Illustrated food imagery is AI-generated, with disclosure in each article.
