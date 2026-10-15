@@ -14,4 +14,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/"/>
     <lastmod>2026-10-14</lastmod>
   </url>
+  <url>
+    <loc>https://themexicoreview.com/cancun/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/cancun/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/cancun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/cancun/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://themexicoreview.com/en/cancun/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/cancun/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/cancun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/cancun/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://themexicoreview.com/mexico-city/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/mexico-city/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/mexico-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/mexico-city/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://themexicoreview.com/en/mexico-city/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/mexico-city/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/mexico-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/mexico-city/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://themexicoreview.com/los-cabos/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/los-cabos/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/los-cabos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/los-cabos/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://themexicoreview.com/en/los-cabos/</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://themexicoreview.com/los-cabos/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://themexicoreview.com/en/los-cabos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://themexicoreview.com/los-cabos/"/>
+    <lastmod>2026-10-14</lastmod>
+  </url>
 </urlset>
