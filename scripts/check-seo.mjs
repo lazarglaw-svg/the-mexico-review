@@ -47,7 +47,8 @@ for (const p of pageFiles) {
   } else if (html.includes('hreflang="es-MX"') || html.includes('hreflang="en-US"')) {
     fail(p, "unpaired page must not advertise nonexistent localized counterpart");
   }
-  for (const k of ["og:title", "og:description", "og:image", "og:url", "og:locale", "og:locale:alternate"]) {
+  const hasTranslatedPartner = exists(partner + "index.html") && exists("en/" + partner + "index.html");
+  for (const k of ["og:title", "og:description", "og:image", "og:url", "og:locale", ...(hasTranslatedPartner ? ["og:locale:alternate"] : [])]) {
     if (!attr(html, k, "property")) fail(p, "missing " + k);
   }
   for (const k of ["twitter:card", "twitter:title", "twitter:description", "twitter:image"]) {
