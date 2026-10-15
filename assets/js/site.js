@@ -24,3 +24,11 @@ if(reduced){
   },{threshold:.12});
   document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 }
+
+// City filter navigates to real locale-specific city/category pages.
+document.querySelectorAll("[data-city-filter]").forEach(select=>{
+  select.addEventListener("change",()=>{
+    const next=select.value;
+    if(next && next.startsWith("/") && !next.startsWith("//"))window.location.assign(next);
+  });
+});
