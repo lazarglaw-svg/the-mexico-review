@@ -1,0 +1,22 @@
+# The Mexico Review
+
+> Independent editorial guide to destinations, restaurants, hotels and experiences in Mexico. Primary language: Mexican Spanish (es-MX); English edition also available.
+
+## Published destination guides
+- [Inicio · Español](https://themexicoreview.com/)
+- [Home · English](https://themexicoreview.com/en/)
+- [Cancún · ES](https://themexicoreview.com/cancun/)
+- [Cancún · EN](https://themexicoreview.com/en/cancun/)
+- [Ciudad de México · ES](https://themexicoreview.com/mexico-city/)
+- [Mexico City · EN](https://themexicoreview.com/en/mexico-city/)
+- [Los Cabos · ES](https://themexicoreview.com/los-cabos/)
+- [Los Cabos · EN](https://themexicoreview.com/en/los-cabos/)
+
+## Editorial scope and verification
+- Reviews must be supported by verifiable first-hand evidence where they describe lived experiences.
+- Best Of lists and annual awards will be published only when adequate evaluation supports them. No recipients have been named.
+- Category landing pages are still being developed and do not contain verified rankings.
+- This is a navigation aid for agents, not a substitute for the canonical HTML pages or sitemap.
+
+## Index and contact
+- [Sitemap](https://themexicoreview.com/sitemap.xml)

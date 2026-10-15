@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# ChatGPT search crawling is allowed; training and search crawlers are independent.
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://themexicoreview.com/sitemap.xml
