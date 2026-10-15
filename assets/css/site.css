@@ -245,3 +245,87 @@ button{font:inherit}
  .language-flag{font-size:16px}
  .language-option{gap:4px;padding:8px 2px}
 }
+
+/* Destination editorial guides + city-filtered category foundations */
+.city-story,.city-explore,.city-sources{background:var(--paper)}
+.city-story{padding:90px 0 105px}
+.city-lede{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(46px,8vw,120px);margin-bottom:55px}
+.city-lede h2{font:400 clamp(50px,5.7vw,85px)/1.04 var(--serif);letter-spacing:-.025em;margin:17px 0 0}
+.city-lede-text p{font:400 14px/1.95 var(--sans);color:#635D56;margin:0 0 20px}
+.city-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:8px 0 80px;padding:27px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.city-fact .eyebrow{display:block;color:var(--muted)}
+.city-fact strong{display:block;font:400 clamp(28px,3vw,45px)/1.12 var(--serif);margin-top:12px}
+.city-fact small{font:400 11px/1.65 var(--sans);color:var(--muted);display:block;margin-top:8px}
+.city-photo-duo{display:grid;grid-template-columns:1.25fr .85fr;gap:22px}
+.city-photo-duo figure{margin:0}
+.city-photo-duo figure:nth-child(2){padding-top:85px}
+.city-photo-duo img{width:100%;height:auto;aspect-ratio:1.21;object-fit:cover}
+.city-photo-duo figure:nth-child(2) img{aspect-ratio:.85}
+.city-photo-duo figcaption{color:var(--muted);font:400 10px/1.65 var(--ui);margin-top:11px}
+.city-neighborhoods{padding:112px 0;background:var(--white)}
+.city-neighborhood-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}
+.city-neighborhood{padding-top:22px;border-top:1px solid var(--hair)}
+.city-neighborhood h3{font:400 clamp(32px,3.4vw,48px)/1.09 var(--serif);margin:22px 0 13px}
+.city-neighborhood p{font:400 12px/1.9 var(--sans);color:var(--muted);margin:0}
+.city-explore{padding:110px 0}
+.city-explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}
+.city-explore-card{display:flex;flex-direction:column;min-height:200px;border-top:1px solid var(--hair);padding-top:18px}
+.city-explore-card h3{font:400 clamp(36px,4vw,58px)/1 var(--serif);margin:24px 0 15px}
+.city-explore-card .underlined-link{margin-top:auto}
+.city-sources{padding:32px 0 60px;border-top:1px solid var(--hair)}
+.city-sources details{font:400 11px/1.8 var(--sans);color:var(--muted)}
+.city-sources summary{font:600 10px/1.3 var(--ui);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.city-sources a{text-decoration:underline;text-underline-offset:3px}
+.city-sources a+a{margin-left:16px}
+.city-sources p{max-width:880px;margin:10px 0}
+.category-index-hero{background:var(--paper);padding:90px 0 95px}
+.category-index-layout{display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:clamp(50px,8vw,120px)}
+.category-index-layout h1,.city-category-hero h1{font:400 clamp(66px,7.1vw,109px)/1.02 var(--serif);letter-spacing:-.025em;margin:22px 0 25px}
+.category-index-layout p,.city-category-hero p{font:400 14px/1.95 var(--sans);max-width:540px;color:var(--muted);margin:0 0 24px}
+.category-index-photo img{width:100%;aspect-ratio:1.12;object-fit:cover}
+.category-status{font:500 10px/1.5 var(--ui);text-transform:uppercase;letter-spacing:.14em;color:var(--wine)}
+.category-directory{background:var(--white)}
+.category-tabs{display:flex;gap:27px;align-items:center;flex-wrap:wrap;margin-bottom:60px;padding-bottom:16px;border-bottom:1px solid var(--hair)}
+.category-tabs a{font:600 10px/1.4 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:8px 0}
+.category-tabs a[aria-current="page"]{color:var(--wine);border-bottom:1px solid var(--wine)}
+.category-directory-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:38px;margin-bottom:40px}
+.city-filter{display:flex;flex-direction:column;gap:9px;min-width:230px}
+.city-filter label{font:600 10px/1.3 var(--ui);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.city-filter select{appearance:none;border:1px solid var(--hair);border-radius:0;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='13' height='13'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='%234B0F17' stroke-width='1.7'/%3E%3C/svg%3E") no-repeat right 15px center;color:var(--ink);padding:15px 38px 15px 14px;width:100%;font:500 13px/1.3 var(--sans);cursor:pointer}
+.city-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+.city-choice-image{aspect-ratio:1.1;overflow:hidden}
+.city-choice-image img{width:100%;height:100%;object-fit:cover}
+.city-choice-copy{padding-top:19px}
+.city-choice-copy h2{font:400 clamp(33px,3.5vw,51px)/1 var(--serif);margin:14px 0 21px}
+.category-directory .directory-note{color:var(--muted);font:400 12px/1.85 var(--sans);margin:39px 0 0}
+.city-category-hero{background:var(--paper);padding:65px 0 90px}
+.city-category-hero .breadcrumb{display:block;margin-bottom:68px}
+.empty-editorial{background:var(--paper);padding:60px 55px;margin-top:25px;max-width:950px}
+.empty-editorial h2{font:400 clamp(44px,5vw,68px)/1.08 var(--serif);margin:18px 0}
+.empty-editorial p{font:400 13px/1.9 var(--sans);max-width:610px;color:var(--muted);margin:0 0 25px}
+@media(max-width:900px){
+ .city-lede,.category-index-layout{grid-template-columns:1fr;gap:40px}
+ .city-photo-duo{gap:16px}
+ .city-neighborhood-grid,.city-explore-grid{gap:20px}
+ .city-choice-grid{gap:16px}
+}
+@media(max-width:670px){
+ .city-story,.city-neighborhoods,.city-explore{padding:76px 0}
+ .city-lede{gap:25px}
+ .city-lede h2{font-size:56px}
+ .city-facts{gap:17px;margin-bottom:46px}
+ .city-fact strong{font-size:26px}
+ .city-fact .eyebrow{font-size:8px}
+ .city-photo-duo{grid-template-columns:1fr;gap:28px}
+ .city-photo-duo figure:nth-child(2){padding-top:0}
+ .city-photo-duo img,.city-photo-duo figure:nth-child(2) img{aspect-ratio:1.2}
+ .city-neighborhood-grid,.city-explore-grid,.city-choice-grid{grid-template-columns:1fr;gap:29px}
+ .city-neighborhood h3{font-size:41px}
+ .category-index-hero,.city-category-hero{padding:65px 0}
+ .category-index-layout h1,.city-category-hero h1{font-size:60px}
+ .category-directory-head{grid-template-columns:1fr;gap:24px}
+ .city-filter{width:100%}
+ .category-tabs{gap:17px;margin-bottom:40px}
+ .city-choice-image{aspect-ratio:1.2}
+ .empty-editorial{padding:35px 25px}
+}
