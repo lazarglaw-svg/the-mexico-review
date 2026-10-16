@@ -50,3 +50,16 @@
 .awards-independence .underlined-link{color:#fff;margin-top:26px}
 @media(max-width:900px){.awards-hero-layout,.awards-form-grid{grid-template-columns:1fr}.awards-section-intro{gap:35px}}
 @media(max-width:650px){.awards-2027 .awards-hero,.awards-2027 .awards-categories,.awards-process,.awards-nomination,.awards-independence{padding:75px 0}.awards-2027 h1{font-size:60px}.awards-section-intro,.awards-cats,.awards-steps,.awards-fields{grid-template-columns:1fr}.awards-cats,.awards-steps{gap:35px}.awards-switch-options{grid-template-columns:1fr}.awards-panel{padding:23px}}
+
+
+/* Design refinement — distinct process cards without losing editorial restraint */
+.awards-2027 .awards-hero{background:#F4EFE8;border-bottom:1px solid rgba(75,15,23,.15)}
+.awards-hero-date{padding:35px 33px;border:1px solid rgba(75,15,23,.17);background:#FCFAF6}
+.awards-section-intro{border-bottom:1px solid rgba(75,15,23,.18);padding-bottom:30px;margin-bottom:36px}
+.awards-cat{padding:29px;border:1px solid rgba(75,15,23,.15);background:#F9F6F1}
+.awards-cat h3{margin-top:27px}
+.awards-process{border-top:1px solid rgba(75,15,23,.12);border-bottom:1px solid rgba(75,15,23,.12)}
+.awards-step{padding:27px;background:#FAF7F2;border:1px solid rgba(75,15,23,.14)}
+.awards-panel{border-color:rgba(75,15,23,.24);background:#F5F1EA}
+.awards-independence{border-top:1px solid rgba(255,255,255,.15)}
+@media(max-width:670px){.awards-hero-date,.awards-cat,.awards-step{padding:23px}}

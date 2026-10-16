@@ -64,3 +64,25 @@
 .tmr-editorial-card-image-name{font:400 clamp(42px,4vw,61px)/.98 var(--serif);letter-spacing:-.035em;color:#fff}
 .tmr-editorial-footnote a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:620px){.tmr-profile .tmr-intro.tmr-intro--text-only{padding:44px 0 55px}.tmr-editorial-card-image--text{padding:24px}}
+
+
+/* Design refinement — clear card boundaries, consistent gallery rhythm */
+.tmr-profile-directory{background:#F8F5F0;border-top:1px solid rgba(75,15,23,.11)}
+.tmr-editorial-card-grid{gap:18px}
+.tmr-editorial-card{padding:10px 10px 30px;background:#FFFDF9;border:1px solid rgba(75,15,23,.16);transition:border-color .2s}
+.tmr-editorial-card:hover{border-color:rgba(75,15,23,.5)}
+.tmr-editorial-card-image{aspect-ratio:1.28}
+.tmr-editorial-card-kicker{margin:22px 17px 0}
+.tmr-editorial-card h3{padding-inline:17px;margin:15px 0}
+.tmr-editorial-card p{padding-inline:17px}
+.tmr-editorial-card-label{margin-left:17px;margin-top:auto}
+.tmr-editorial-footnote{padding-top:19px;border-top:1px solid rgba(75,15,23,.14)}
+.tmr-profile .tmr-intro{border-bottom:1px solid rgba(75,15,23,.18);padding-bottom:62px}
+.tmr-profile .tmr-layout{border-top:0;padding-top:49px}
+.tmr-profile .tmr-aside{border:1px solid rgba(75,15,23,.2);border-radius:0;background:#F5F0E9;padding:30px 27px}
+.tmr-profile .tmr-hero-figure img{border-radius:0}
+.tmr-profile .tmr-copy h2{border-top:1px solid rgba(75,15,23,.15);padding-top:27px}
+.tmr-profile .tmr-related-cards a{background:#FAF7F2;transition:border-color .2s}
+.tmr-profile .tmr-related-cards a:hover{border-color:var(--wine)}
+@media(max-width:900px){.tmr-editorial-card-grid{gap:19px}.tmr-profile .tmr-layout{padding-top:30px}}
+@media(max-width:620px){.tmr-editorial-card{padding:9px 9px 26px}}
