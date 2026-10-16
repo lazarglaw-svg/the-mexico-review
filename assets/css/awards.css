@@ -1,0 +1,52 @@
+
+.awards-2027{overflow-x:clip;background:var(--paper)}
+.awards-2027 .awards-hero{padding:105px 0;background:var(--paper)}
+.awards-hero-layout{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;gap:clamp(50px,8vw,125px)}
+.awards-2027 h1,.awards-2027 h2,.awards-2027 h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}
+.awards-2027 h1{font-size:clamp(65px,7.4vw,116px);line-height:1.02;margin:24px 0 30px}
+.awards-2027 h2{font-size:clamp(49px,5.6vw,78px);line-height:1.06;margin:20px 0}
+.awards-hero-lede{font:400 15px/1.95 var(--sans);color:var(--muted);max-width:670px;margin:0 0 30px}
+.awards-hero-date{border-top:1px solid var(--hair);padding-top:30px}
+.awards-hero-date strong{font:400 clamp(31px,3.3vw,48px)/1.1 var(--serif);display:block;margin:18px 0}
+.awards-hero-date p,.awards-small{font:400 12px/1.9 var(--sans);color:var(--muted)}
+.awards-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--wine);color:white;min-height:48px;padding:14px 29px;text-decoration:none;font:600 11px/1.3 var(--ui);text-transform:uppercase;letter-spacing:.09em}
+.awards-cta:hover{background:var(--wine-dark)}
+.awards-2027 .awards-categories{padding:110px 0;background:var(--white)}
+.awards-section-intro{display:grid;grid-template-columns:1fr minmax(250px,.56fr);gap:80px;align-items:end;margin-bottom:48px}
+.awards-section-intro p{font:400 13px/1.9 var(--sans);color:var(--muted)}
+.awards-cats,.awards-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.awards-cat,.awards-step{border-top:1px solid var(--hair);padding-top:24px}
+.awards-cat h3,.awards-step h3{font:400 clamp(38px,3.7vw,51px)/1.08 var(--serif);margin:28px 0 14px}
+.awards-cat p,.awards-step p{font:400 12px/1.9 var(--sans);color:var(--muted);margin:0}
+.awards-process{background:var(--paper-2);padding:115px 0}
+.awards-process-intro{max-width:750px;margin-bottom:50px}
+.awards-process-intro p{font:400 14px/1.9 var(--sans);color:var(--muted)}
+.awards-nomination{padding:120px 0;background:var(--white)}
+.awards-form-grid{display:grid;grid-template-columns:.73fr 1fr;gap:clamp(45px,8vw,125px);align-items:start}
+.awards-form-intro p{font:400 13px/1.9 var(--sans);color:var(--muted)}
+.awards-panel{padding:clamp(24px,4vw,46px);background:var(--paper);border:1px solid var(--hair)}
+.awards-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px}
+.awards-field.full{grid-column:1/-1}
+.awards-field label,.awards-field legend{display:block;font:600 11px/1.5 var(--sans);margin-bottom:9px;color:var(--ink)}
+.awards-field input:not([type=radio]),.awards-field select,.awards-field textarea{width:100%;display:block;background:var(--white);border:1px solid #CAC3BB;border-radius:0;color:var(--ink);padding:13px 14px;min-height:49px;font:400 13px/1.5 var(--sans)}
+.awards-field textarea{resize:vertical;min-height:145px}
+.awards-field small{display:block;font:400 10px/1.65 var(--sans);color:var(--muted);margin-top:6px}
+.awards-switch{border:0;padding:0;margin:0}
+.awards-switch-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.awards-option{display:flex;align-items:center;gap:9px;cursor:pointer;background:var(--white);border:1px solid #CAC3BB;padding:12px;font:500 11px/1.5 var(--sans);min-height:55px}
+.awards-option:has(input:checked){border-color:var(--wine);background:#F6EBE8}
+.awards-option input,.awards-consent input{accent-color:var(--wine)}
+.awards-consent{display:flex;align-items:flex-start;gap:10px;font:400 11px/1.85 var(--sans);margin:29px 0 20px}
+.awards-consent input{margin-top:4px;flex:none}
+.awards-submit{background:var(--wine);border:0;color:#fff;min-height:52px;padding:15px 27px;font:600 11px/1.4 var(--ui);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.awards-submit:disabled{cursor:not-allowed;background:#9C918A}
+.awards-form-status{color:var(--wine);font:500 12px/1.8 var(--sans);min-height:25px;margin:15px 0}
+.awards-form-fine{color:var(--muted);font:400 10px/1.8 var(--sans);margin:14px 0 0}
+.awards-honeypot{position:absolute!important;left:-9999px!important;opacity:0;pointer-events:none}
+.awards-independence{background:var(--green);color:#fff;padding:105px 0}
+.awards-independence h2{max-width:950px}
+.awards-independence p{max-width:740px;color:#DDE7DD;font:400 14px/1.9 var(--sans)}
+.awards-independence .eyebrow{color:#E1E2CB}
+.awards-independence .underlined-link{color:#fff;margin-top:26px}
+@media(max-width:900px){.awards-hero-layout,.awards-form-grid{grid-template-columns:1fr}.awards-section-intro{gap:35px}}
+@media(max-width:650px){.awards-2027 .awards-hero,.awards-2027 .awards-categories,.awards-process,.awards-nomination,.awards-independence{padding:75px 0}.awards-2027 h1{font-size:60px}.awards-section-intro,.awards-cats,.awards-steps,.awards-fields{grid-template-columns:1fr}.awards-cats,.awards-steps{gap:35px}.awards-switch-options{grid-template-columns:1fr}.awards-panel{padding:23px}}
