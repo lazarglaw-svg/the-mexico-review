@@ -101,3 +101,12 @@
 .journal-table-scroll th{background:#F3EEE7;color:var(--wine);font:600 10px/1.6 var(--ui);letter-spacing:.1em;text-transform:uppercase}
 .journal-table-scroll tr:last-child td{border-bottom:0}
 @media(max-width:670px){.journal-latest-grid{grid-template-columns:1fr;gap:28px}.journal-table-scroll table{font-size:11px}}
+
+/* Related Journal stories on destination guides; discreet reusable typography */
+.city-journal-links{padding:90px 0 100px;background:#F1EBE2;border-top:1px solid rgba(75,15,23,.16)}
+.city-journal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.city-journal-grid>a{background:#FFFDF9;border:1px solid rgba(75,15,23,.17);padding:30px}
+.city-journal-grid h3{font:400 clamp(32px,3.5vw,48px)/1.1 var(--serif);margin:20px 0 31px}
+.journal-image-credit{font:400 10px/1.85 var(--ui);color:var(--muted);margin:25px 0 33px;max-width:900px}
+.journal-image-credit a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:670px){.city-journal-links{padding:65px 0}.city-journal-grid{grid-template-columns:1fr}.city-journal-grid>a{padding:23px}}
