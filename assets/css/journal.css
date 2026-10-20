@@ -87,3 +87,17 @@
 .journal-related{border-top-color:rgba(75,15,23,.26)}
 @media(max-width:900px){.journal-featured{grid-template-columns:1fr;padding:11px}.journal-featured-copy{padding:24px 21px 30px}.journal-featured-image{aspect-ratio:1.6}}
 @media(max-width:670px){.journal-article-intro{padding-bottom:25px}.journal-featured-image{aspect-ratio:1.15}.journal-story-card{padding:8px 8px 24px}.journal-home-top{padding-bottom:22px}}
+
+/* 2026 Journal additions: new stories, licensed image layout and readable tables */
+.journal-latest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start}
+.journal-existing-card{min-width:0}
+.journal-inline-photo{margin:36px 0 42px}
+.journal-inline-photo img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#E4DED4}
+.journal-inline-photo figcaption{color:var(--muted);font:400 10px/1.7 var(--ui);margin-top:9px}
+.journal-inline-photo figcaption a{text-decoration:underline;text-underline-offset:3px}
+.journal-table-scroll{overflow-x:auto;border:1px solid rgba(75,15,23,.17);margin:23px 0 32px}
+.journal-table-scroll table{border-collapse:collapse;min-width:480px;width:100%;font:400 12px/1.6 var(--sans)}
+.journal-table-scroll th,.journal-table-scroll td{padding:15px 18px;text-align:left;border-bottom:1px solid rgba(75,15,23,.12)}
+.journal-table-scroll th{background:#F3EEE7;color:var(--wine);font:600 10px/1.6 var(--ui);letter-spacing:.1em;text-transform:uppercase}
+.journal-table-scroll tr:last-child td{border-bottom:0}
+@media(max-width:670px){.journal-latest-grid{grid-template-columns:1fr;gap:28px}.journal-table-scroll table{font-size:11px}}
