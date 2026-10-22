@@ -76,6 +76,13 @@ for (const p of pageFiles) {
   for (const m of html.matchAll(/(?:src|href)="(\/assets\/[^"]+)"/g)) {
     const asset=m[1].split("?")[0].slice(1);
     if (!exists(asset)) fail(p, "missing local asset " + m[1]);
+    // Hotel imagery must be a real first-party WebP binary, not another broken remote thumbnail.
+    if (asset.startsWith("assets/editorial/hotels/") && asset.endsWith(".webp") && exists(asset)) {
+      const bytes = fs.readFileSync(path.join(root, asset));
+      if (bytes.length < 10000 || bytes.toString("ascii", 0, 4) !== "RIFF" || bytes.toString("ascii", 8, 12) !== "WEBP") {
+        fail(p, "invalid local WebP image " + asset);
+      }
+    }
   }
   if (!attr(html, "robots").startsWith("noindex")) indexable.add(canonical);
   for (const m of html.matchAll(/\bhref="(\/[^"]*)"/g)) {
