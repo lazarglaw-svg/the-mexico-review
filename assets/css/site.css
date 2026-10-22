@@ -487,7 +487,9 @@ a.city-explore-card:focus-visible{
 }
 .hero-button{margin-top:36px;}
 .hero-button-rule{display:none;}
-.hero-button-mark{line-height:1;font-size:16px;}
+.hero-button-mark{display:none;}
+/* Decorative link arrows are intentionally absent from all CTA variants. */
+.hero-actions a > span[aria-hidden="true"]{display:none;}
 /* Clear ink-dark CTAs on Bordeaux / other dark editorial surfaces. */
 .closing-section .underlined-link,
 .page-ending .underlined-link,
@@ -538,12 +540,12 @@ a.city-explore-card:focus-visible{
  transition:background-color .2s ease,border-color .2s ease;
 }
 .city-choice::after{margin:21px 15px 0;}
-html[lang^="es"] .destination-entry::after{content:"Explorar destino  ↗";}
-html[lang^="en"] .destination-entry::after{content:"Explore destination  ↗";}
-html[lang^="es"] .category-entry::after{content:"Ver categoría  ↗";}
-html[lang^="en"] .category-entry::after{content:"Explore category  ↗";}
-html[lang^="es"] .city-choice::after{content:"Ver destino  ↗";}
-html[lang^="en"] .city-choice::after{content:"Explore destination  ↗";}
+html[lang^="es"] .destination-entry::after{content:"Explorar destino";}
+html[lang^="en"] .destination-entry::after{content:"Explore destination";}
+html[lang^="es"] .category-entry::after{content:"Ver categoría";}
+html[lang^="en"] .category-entry::after{content:"Explore category";}
+html[lang^="es"] .city-choice::after{content:"Ver destino";}
+html[lang^="en"] .city-choice::after{content:"Explore destination";}
 .destination-entry:hover::after,
 .category-entry:hover::after,
 .city-choice:hover::after{background:var(--tmr-action-red-hover);border-color:var(--tmr-action-red-hover);}
