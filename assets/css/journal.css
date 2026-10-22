@@ -143,3 +143,21 @@
 .journal-featured-copy a.journal-story-link:focus-visible{outline:2px solid #4B0F17;outline-offset:4px;}
 .journal-story-card .journal-story-link{margin:6px 17px 0;}
 .journal-story-card:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}
+
+/* Luxury editorial refinement: balanced journal cards and quieter actions */
+.journal-landing-intro{background:#F5F1EA;border-bottom:1px solid rgba(75,15,23,.12)}
+.journal-featured{background:#F8F5EF;border:1px solid rgba(75,15,23,.13);border-radius:2px;overflow:hidden}
+.journal-featured-copy{align-self:center}
+.journal-home-teaser{background:#EEEAE3;border-top:1px solid rgba(75,15,23,.12)}
+.journal-secondary-title,.journal-home-top{border-bottom:1px solid rgba(75,15,23,.18);padding-bottom:29px}
+.journal-home-grid,.journal-latest-grid{gap:20px;align-items:stretch}
+.journal-story-card{display:flex;flex-direction:column;height:100%;background:#FFFDF9;border:1px solid rgba(75,15,23,.13);border-radius:2px;padding:9px 9px 26px}
+.journal-story-card figure{width:100%;flex:none}
+.journal-story-card p{flex-grow:1}
+.journal-story-card .journal-story-link{display:inline-flex;align-self:flex-start;min-height:44px;margin:9px 17px 0;padding:11px 19px;border:1px solid rgba(75,15,23,.62);border-radius:2px;background:transparent;color:#4B0F17;letter-spacing:.075em}
+.journal-story-card:hover .journal-story-link,.journal-story-card:focus-visible .journal-story-link{background:#4B0F17;color:#fff;border-color:#4B0F17}
+.journal-featured-copy a.journal-story-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 22px;background:#4B0F17;border:1px solid #4B0F17;border-radius:2px;color:#fff;text-decoration:none}
+.journal-featured-copy a.journal-story-link:hover{background:#691D29;border-color:#691D29;color:#fff}
+.journal-article-intro{padding-bottom:34px;border-bottom:1px solid rgba(75,15,23,.16)}
+.journal-faq{border-radius:2px;background:#F7F3EC;border:1px solid rgba(75,15,23,.12)}
+@media(max-width:670px){.journal-home-grid,.journal-latest-grid{gap:18px}.journal-story-card{padding:8px 8px 23px}}

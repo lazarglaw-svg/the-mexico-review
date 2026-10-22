@@ -38,3 +38,14 @@
 .tmr-hotel .rh-btn.rh-outline{background:#211E1B;border-color:#211E1B;color:#fff!important;}
 .tmr-hotel .rh-btn.rh-outline:hover{background:#3C3531;border-color:#3C3531;color:#fff!important;}
 .tmr-hotel .rh-btn:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}
+
+/* Luxury hotel profiles: one calm reading column and button hierarchy */
+.tmr-hotel .rh-header{max-width:930px}
+.tmr-hotel .rh-highlights{background:#F7F3ED;border:1px solid rgba(75,15,23,.15);border-radius:2px}
+.tmr-hotel .rh-panel{background:#F7F3ED;border:1px solid rgba(75,15,23,.17);border-radius:2px}
+.tmr-hotel .rh-recommend{background:#F5F0E9;border-left:2px solid #4B0F17}
+.tmr-hotel .rh-btn{border-radius:2px}
+.tmr-hotel .rh-btn.rh-outline{border:1px solid #211E1B;background:transparent;color:#211E1B!important}
+.tmr-hotel .rh-btn.rh-outline:hover{background:#211E1B;color:#fff!important}
+.tmr-hotel .rh-more-links a{min-height:45px;display:inline-flex;align-items:center;padding:12px 18px;border:1px solid rgba(75,15,23,.48);background:transparent;border-radius:2px;color:#4B0F17;text-decoration:none!important;font:600 11px/1.5 var(--ui)}
+.tmr-hotel .rh-more-links a:hover{background:#4B0F17;color:#fff;text-decoration:none}

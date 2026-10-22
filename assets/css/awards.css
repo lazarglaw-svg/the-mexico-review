@@ -89,3 +89,16 @@
 .awards-submit:focus-visible{outline:2px solid #4B0F17;outline-offset:4px;}
 .awards-independence .underlined-link,
 .awards-independence .underlined-link:hover{color:#fff;}
+
+/* Luxury awards hierarchy, restrained cards and clear submission action */
+.awards-2027 .awards-hero{background:#F7F3ED}
+.awards-hero-date{background:#FFFEFB;border:1px solid rgba(75,15,23,.15);border-radius:2px}
+.awards-cat,.awards-step{background:#FFFDF9;border:1px solid rgba(75,15,23,.14);border-radius:2px;min-height:100%}
+.awards-cats,.awards-steps{gap:19px;align-items:stretch}
+.awards-cat{padding:27px 28px 32px}
+.awards-step{padding:27px 28px 31px}
+.awards-panel{border:1px solid rgba(75,15,23,.19);background:#F8F5F0;border-radius:2px}
+.awards-cta,.awards-submit{border-radius:2px;letter-spacing:.075em}
+.awards-independence a.underlined-link{background:#211E1B;border:1px solid #211E1B;color:#fff;border-radius:2px}
+.awards-independence a.underlined-link:hover{background:#3C3531;border-color:#3C3531}
+@media(max-width:670px){.awards-cats,.awards-steps{gap:17px}}

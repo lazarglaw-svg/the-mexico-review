@@ -130,3 +130,17 @@
 .tmr-profile .tmr-link.light{background:#211E1B;border-color:#211E1B;color:#fff!important;}
 .tmr-profile .tmr-link.light:hover{background:#3C3531;border-color:#3C3531;}
 .tmr-profile .tmr-link:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}
+
+/* Luxury editorial refinement: review cards form complete grouped stories */
+.tmr-profile-directory{background:#F7F3ED;border-top:1px solid rgba(75,15,23,.12)}
+.tmr-editorial-card-grid{gap:19px;align-items:stretch}
+.tmr-editorial-card{display:flex;flex-direction:column;height:100%;padding:9px 9px 25px;background:#FFFDF9;border:1px solid rgba(75,15,23,.15);border-radius:2px;box-shadow:none}
+.tmr-editorial-card-image{flex:none;width:100%}
+.tmr-editorial-card h3{line-height:1.12}
+.tmr-editorial-card p{flex:1}
+.tmr-editorial-card-label{max-width:calc(100% - 34px);min-height:44px;margin:18px 17px 0;padding:11px 19px;background:transparent;color:#4B0F17;border:1px solid rgba(75,15,23,.6);border-radius:2px;font:600 10px/1.5 var(--ui);letter-spacing:.075em}
+.tmr-editorial-card:hover .tmr-editorial-card-label{background:#4B0F17;color:#fff;border-color:#4B0F17}
+.tmr-profile .tmr-aside{background:#F7F3ED;border:1px solid rgba(75,15,23,.17);border-radius:2px}
+.tmr-profile .tmr-link{border-radius:2px;letter-spacing:.065em}
+.tmr-profile .tmr-link.light{background:transparent;border:1px solid #211E1B;color:#211E1B!important}
+.tmr-profile .tmr-link.light:hover{background:#211E1B;color:#fff!important}
