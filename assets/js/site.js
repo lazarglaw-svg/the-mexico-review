@@ -32,3 +32,24 @@ document.querySelectorAll("[data-city-filter]").forEach(select=>{
     if(next && next.startsWith("/") && !next.startsWith("//"))window.location.assign(next);
   });
 });
+
+// Remove the decorative north-east arrow wherever it appears in visible
+// site copy (including shared CTA markup and external photo-credit links).
+// Keep links, their accessible text, and their click behaviour unchanged.
+function removeDecorativeDiagonalArrows(){
+  document.querySelectorAll("span").forEach(span=>{
+    if(span.textContent.trim()==="↗")span.remove();
+  });
+  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  let node;
+  while((node=walker.nextNode())){
+    if(!node.nodeValue.includes("↗"))continue;
+    if(node.parentElement?.closest("script,style,template,textarea"))continue;
+    node.nodeValue=node.nodeValue.replace(/\s*↗/g,"");
+  }
+}
+if(document.readyState==="loading"){
+  document.addEventListener("DOMContentLoaded",removeDecorativeDiagonalArrows,{once:true});
+}else{
+  removeDecorativeDiagonalArrows();
+}
