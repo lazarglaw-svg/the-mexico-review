@@ -1,0 +1,30 @@
+name: Import licensed hotel images
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-hotel-photos.yml"
+      - "scripts/import-hotel-photos.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-hotel-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Prepare image toolkit
+        run: python -m pip install --quiet pillow
+      - name: Download, validate and optimize licensed Commons photos
+        run: python scripts/import-hotel-photos.py
+      - name: Commit local assets and updated page references
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/editorial/hotels/ '*.html'
+          git diff --cached --quiet && exit 0
+          git commit -m "Serve verified licensed hotel photos locally instead of Wikimedia thumbnails"
+          git push origin HEAD:main
