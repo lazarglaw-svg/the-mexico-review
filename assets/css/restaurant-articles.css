@@ -86,3 +86,47 @@
 .tmr-profile .tmr-related-cards a:hover{border-color:var(--wine)}
 @media(max-width:900px){.tmr-editorial-card-grid{gap:19px}.tmr-profile .tmr-layout{padding-top:30px}}
 @media(max-width:620px){.tmr-editorial-card{padding:9px 9px 26px}}
+
+
+/* Unified visible action buttons in restaurant directories and profiles. */
+.tmr-editorial-card-label{
+ display:inline-flex;
+ width:fit-content;
+ max-width:calc(100% - 34px);
+ min-height:45px;
+ align-items:center;
+ justify-content:center;
+ padding:12px 20px;
+ border:1px solid #4B0F17;
+ border-bottom:1px solid #4B0F17;
+ background:#4B0F17;
+ color:#fff;
+ font:600 10px/1.5 var(--ui);
+ letter-spacing:.095em;
+ text-align:center;
+ text-transform:uppercase;
+ text-decoration:none;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.tmr-editorial-card:hover .tmr-editorial-card-label{background:#691D29;border-color:#691D29;color:#fff;}
+.tmr-editorial-card:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}
+.tmr-profile .tmr-link,
+.tmr-profile .tmr-link.light{
+ display:flex;
+ min-height:46px;
+ align-items:center;
+ justify-content:center;
+ padding:12px 19px;
+ background:#4B0F17;
+ color:#fff!important;
+ border:1px solid #4B0F17;
+ font:600 11px/1.55 var(--ui);
+ letter-spacing:.07em;
+ text-transform:uppercase;
+ text-decoration:none!important;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.tmr-profile .tmr-link:hover{background:#691D29;border-color:#691D29;}
+.tmr-profile .tmr-link.light{background:#211E1B;border-color:#211E1B;color:#fff!important;}
+.tmr-profile .tmr-link.light:hover{background:#3C3531;border-color:#3C3531;}
+.tmr-profile .tmr-link:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}

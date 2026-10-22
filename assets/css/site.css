@@ -424,3 +424,166 @@ button{font:inherit}
 .hotel-feature-credit a{text-decoration:underline;text-underline-offset:2px}
 @media(max-width:1000px){.hotel-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.hotel-feature-grid{grid-template-columns:1fr}.hotel-feature-card{padding:8px 8px 14px}}
+
+
+/* TMR action design v2 — 2026-10-22
+   Navigation remains text; navigational CTAs become real link buttons,
+   while genuine form actions stay <button> elements. */
+:root{
+ --tmr-action-red:#4B0F17;
+ --tmr-action-red-hover:#691D29;
+ --tmr-action-dark:#211E1B;
+ --tmr-action-dark-hover:#3C3531;
+ --tmr-action-text:#FFFFFF;
+}
+/* Primary action links, including their use as labels inside clickable cards. */
+a.underlined-link,
+span.underlined-link,
+a.hero-button,
+a.text-link,
+.error-page .text-link{
+ display:inline-flex;
+ width:fit-content;
+ max-width:100%;
+ min-height:46px;
+ align-items:center;
+ justify-content:center;
+ gap:10px;
+ padding:13px 23px;
+ border:1px solid var(--tmr-action-red);
+ border-bottom:1px solid var(--tmr-action-red);
+ border-radius:0;
+ background:var(--tmr-action-red);
+ color:var(--tmr-action-text);
+ font:600 10px/1.5 var(--ui);
+ letter-spacing:.105em;
+ text-align:center;
+ text-decoration:none;
+ text-transform:uppercase;
+ white-space:normal;
+ transition:background-color .2s ease,border-color .2s ease,transform .2s ease;
+}
+a.underlined-link:hover,
+span.underlined-link:hover,
+a.hero-button:hover,
+a.text-link:hover,
+.error-page .text-link:hover,
+a:where(.destination-entry,.category-entry,.city-explore-card,.editorial-item,.city-journal-grid a):hover .underlined-link{
+ background:var(--tmr-action-red-hover);
+ border-color:var(--tmr-action-red-hover);
+ color:#fff;
+ text-decoration:none;
+ transform:translateY(-1px);
+}
+a.underlined-link:focus-visible,
+a.hero-button:focus-visible,
+a.text-link:focus-visible,
+a.destination-entry:focus-visible,
+a.category-entry:focus-visible,
+a.city-choice:focus-visible,
+a.city-explore-card:focus-visible{
+ outline:2px solid var(--tmr-action-red);
+ outline-offset:4px;
+}
+.hero-button{margin-top:36px;}
+.hero-button-rule{display:none;}
+.hero-button-mark{line-height:1;font-size:16px;}
+/* Clear ink-dark CTAs on Bordeaux / other dark editorial surfaces. */
+.closing-section .underlined-link,
+.page-ending .underlined-link,
+.error-page .text-link,
+.awards-independence .underlined-link,
+.underlined-link.underlined-light{
+ background:var(--tmr-action-dark);
+ color:#FFFFFF;
+ border-color:var(--tmr-action-dark);
+}
+.closing-section .underlined-link:hover,
+.page-ending .underlined-link:hover,
+.error-page .text-link:hover,
+.awards-independence .underlined-link:hover,
+.underlined-link.underlined-light:hover{
+ background:var(--tmr-action-dark-hover);
+ border-color:var(--tmr-action-dark-hover);
+ color:#FFFFFF;
+}
+.closing-section .underlined-link:focus-visible,
+.page-ending .underlined-link:focus-visible,
+.error-page .text-link:focus-visible,
+.awards-independence .underlined-link:focus-visible{outline-color:#FFFFFF;}
+/* Fully clickable destination and category cards need a visible action affordance. */
+.destination-entry,
+.category-entry{display:flex;flex-direction:column;align-items:flex-start;}
+.destination-entry .destination-image,
+.category-entry .category-photo{width:100%;}
+.destination-entry::after,
+.category-entry::after,
+.city-choice::after{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ min-height:44px;
+ width:fit-content;
+ max-width:calc(100% - 24px);
+ margin:24px 13px 0;
+ padding:12px 20px;
+ border:1px solid var(--tmr-action-red);
+ background:var(--tmr-action-red);
+ color:#fff;
+ font:600 10px/1.5 var(--ui);
+ letter-spacing:.095em;
+ line-height:1.5;
+ text-align:center;
+ text-transform:uppercase;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.city-choice::after{margin:21px 15px 0;}
+html[lang^="es"] .destination-entry::after{content:"Explorar destino  ↗";}
+html[lang^="en"] .destination-entry::after{content:"Explore destination  ↗";}
+html[lang^="es"] .category-entry::after{content:"Ver categoría  ↗";}
+html[lang^="en"] .category-entry::after{content:"Explore category  ↗";}
+html[lang^="es"] .city-choice::after{content:"Ver destino  ↗";}
+html[lang^="en"] .city-choice::after{content:"Explore destination  ↗";}
+.destination-entry:hover::after,
+.category-entry:hover::after,
+.city-choice:hover::after{background:var(--tmr-action-red-hover);border-color:var(--tmr-action-red-hover);}
+/* Browse filters are navigation tabs: distinguish the active category rather than
+   turning every plain text label into a false submit action. */
+.category-tabs{gap:10px;}
+.category-tabs a{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ min-height:41px;
+ padding:10px 15px;
+ color:var(--tmr-action-red);
+ border:1px solid rgba(75,15,23,.3);
+ background:transparent;
+ text-decoration:none;
+ transition:background-color .2s ease,color .2s ease;
+}
+.category-tabs a:hover{background:#E9DED8;color:var(--tmr-action-red);}
+.category-tabs a[aria-current="page"]{
+ background:var(--tmr-action-red);
+ color:#fff;
+ border-color:var(--tmr-action-red);
+}
+.category-tabs a:focus-visible{outline:2px solid var(--tmr-action-red);outline-offset:3px;}
+/* Slightly larger tap targets and button breathing room. */
+.editorial-item .underlined-link,
+.city-explore-card .underlined-link{margin-top:auto;}
+.hotel-feature-text .underlined-link{margin-top:4px;}
+@media(max-width:670px){
+ a.underlined-link,
+ span.underlined-link,
+ a.hero-button,
+ a.text-link,
+ .error-page .text-link{min-height:45px;padding:12px 18px;}
+ .destination-entry::after,.category-entry::after,.city-choice::after{margin-top:19px;padding:11px 16px;min-height:44px;}
+ .category-tabs{gap:8px;}
+ .category-tabs a{padding:9px 12px;}
+}
+@media(prefers-reduced-motion:reduce){
+ a.underlined-link,span.underlined-link,a.hero-button,a.text-link,
+ .destination-entry::after,.category-entry::after,.city-choice::after{transition:none!important;}
+}

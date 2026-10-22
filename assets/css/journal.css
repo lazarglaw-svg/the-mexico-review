@@ -110,3 +110,36 @@
 .journal-image-credit{font:400 10px/1.85 var(--ui);color:var(--muted);margin:25px 0 33px;max-width:900px}
 .journal-image-credit a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:670px){.city-journal-links{padding:65px 0}.city-journal-grid{grid-template-columns:1fr}.city-journal-grid>a{padding:23px}}
+
+
+/* Button-style article and story CTAs: all cards remain a single valid link. */
+.journal-story-link{
+ display:inline-flex;
+ width:fit-content;
+ max-width:100%;
+ min-height:45px;
+ align-items:center;
+ justify-content:center;
+ padding:12px 21px;
+ border:1px solid var(--tmr-action-red,#4B0F17);
+ border-bottom:1px solid var(--tmr-action-red,#4B0F17);
+ background:var(--tmr-action-red,#4B0F17);
+ color:#fff;
+ font:600 10px/1.5 var(--ui);
+ letter-spacing:.105em;
+ text-align:center;
+ text-transform:uppercase;
+ text-decoration:none;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.journal-story-card:hover .journal-story-link,
+.journal-featured-copy a.journal-story-link:hover,
+.journal-story-link:hover{
+ background:var(--tmr-action-red-hover,#691D29);
+ border-color:var(--tmr-action-red-hover,#691D29);
+ color:#fff;
+ text-decoration:none;
+}
+.journal-featured-copy a.journal-story-link:focus-visible{outline:2px solid #4B0F17;outline-offset:4px;}
+.journal-story-card .journal-story-link{margin:6px 17px 0;}
+.journal-story-card:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}

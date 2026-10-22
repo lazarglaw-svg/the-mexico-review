@@ -15,3 +15,26 @@
 .tmr-hotel .rh-disclosure{padding:29px 0 47px;color:var(--muted);font:400 11px/1.8 var(--sans)}.tmr-hotel .rh-disclosure details{margin-top:16px}.tmr-hotel .rh-disclosure summary{color:var(--r);cursor:pointer;font-weight:600}.tmr-hotel .rh-sources{list-style:none;margin:12px 0;padding:0}.tmr-hotel .rh-sources li{margin:10px 0}
 @media(max-width:850px){.tmr-hotel .rh-body{grid-template-columns:1fr}.tmr-hotel .rh-panel{position:static}.tmr-hotel .rh-photo img{height:450px}}
 @media(max-width:580px){.tmr-hotel .rh-wrap{width:calc(100% - 30px)}.tmr-hotel .rh-header{margin:25px auto 33px}.tmr-hotel .rh-photo{margin-bottom:39px}.tmr-hotel .rh-photo img{height:290px;min-height:260px}.tmr-hotel .rh-highlights,.tmr-hotel .rh-who{grid-template-columns:1fr}.tmr-hotel .rh-highlight+.rh-highlight{border-left:0;border-top:1px solid rgba(75,15,23,.12)}.tmr-hotel .rh-body{padding-bottom:45px}.tmr-hotel .rh-prose h2{margin-top:36px}}
+
+
+/* Hotel profile actions: solid, legible buttons, not underline-only links. */
+.tmr-hotel .rh-btn,
+.tmr-hotel .rh-btn.rh-outline{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ min-height:47px;
+ padding:13px 18px;
+ background:#4B0F17;
+ color:#fff!important;
+ border:1px solid #4B0F17;
+ text-align:center;
+ font:600 11px/1.5 var(--ui);
+ letter-spacing:.07em;
+ text-decoration:none!important;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.tmr-hotel .rh-btn:hover{background:#691D29;border-color:#691D29;color:#fff!important;text-decoration:none!important;}
+.tmr-hotel .rh-btn.rh-outline{background:#211E1B;border-color:#211E1B;color:#fff!important;}
+.tmr-hotel .rh-btn.rh-outline:hover{background:#3C3531;border-color:#3C3531;color:#fff!important;}
+.tmr-hotel .rh-btn:focus-visible{outline:2px solid #4B0F17;outline-offset:3px;}

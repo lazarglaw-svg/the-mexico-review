@@ -63,3 +63,29 @@
 .awards-panel{border-color:rgba(75,15,23,.24);background:#F5F1EA}
 .awards-independence{border-top:1px solid rgba(255,255,255,.15)}
 @media(max-width:670px){.awards-hero-date,.awards-cat,.awards-step{padding:23px}}
+
+
+/* Awards actions use the shared TMR Bordeaux/black button system. */
+.awards-cta,
+.awards-submit{
+ display:inline-flex;
+ min-height:48px;
+ align-items:center;
+ justify-content:center;
+ padding:14px 25px;
+ border:1px solid #4B0F17;
+ background:#4B0F17;
+ color:#fff;
+ font:600 11px/1.5 var(--ui);
+ letter-spacing:.1em;
+ text-transform:uppercase;
+ text-decoration:none;
+ transition:background-color .2s ease,border-color .2s ease;
+}
+.awards-cta:hover,
+.awards-submit:hover:not(:disabled){background:#691D29;border-color:#691D29;color:#fff;text-decoration:none;}
+.awards-submit:disabled{background:#867B76;border-color:#867B76;color:#fff;cursor:not-allowed;}
+.awards-cta:focus-visible,
+.awards-submit:focus-visible{outline:2px solid #4B0F17;outline-offset:4px;}
+.awards-independence .underlined-link,
+.awards-independence .underlined-link:hover{color:#fff;}
